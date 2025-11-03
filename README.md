@@ -115,11 +115,11 @@ mediconnect/
 **Access at → http://127.0.0.1:5000**
 
 🧱 Core Functionalities
-Function	                Description
-
-Login / Register	        Basic user authentication using Flask sessions.
-Book Service	            Stores service request data in the database.
-Track Status	            Users can view live updates (Pending → Accepted → Completed).
-Admin Control	            Admin can view, accept, and complete user requests.
-Dynamic Navigation	        Menu adapts based on user or admin role.
-Background Styling	        Elegant full-page blurred background image.
+| Function	       |         Description  |
+|-----------|-------------------|
+|Login / Register	       | Basic user authentication using Flask sessions.|
+|Book Service	           | Stores service request data in the database.|
+|Track Status	          |  Users can view live updates (Pending → Accepted → Completed).|
+|Admin Control	           | Admin can view, accept, and complete user requests.|
+|Dynamic Navigation	     |   Menu adapts based on user or admin role.|
+|Background Styling	      |  Elegant full-page blurred background image.|
