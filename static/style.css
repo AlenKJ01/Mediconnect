@@ -1,0 +1,14 @@
+body{font-family: Arial, sans-serif; margin:0; padding:0; background:#f6f8fa; color:#111}
+.header{background:#2b6cb0;color:#fff;padding:12px 20px;display:flex;justify-content:space-between;align-items:center}
+.header h1{margin:0;font-size:20px}
+.header nav a{color:#fff;margin-left:12px;text-decoration:none}
+.container{padding:20px;max-width:980px;margin:20px auto;background:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+.table{width:100%;border-collapse:collapse;margin-top:12px}
+.table th,.table td{border:1px solid #e2e8f0;padding:8px;text-align:left}
+.flashes{list-style:none;padding:0;margin:0 0 10px 0}
+.flashes li{background:#fefcbf;padding:8px;border-radius:4px;margin-bottom:6px}
+.footer{text-align:center;padding:12px;color:#666;font-size:14px}
+button{background:#2b6cb0;color:#fff;padding:8px 12px;border:none;border-radius:4px;cursor:pointer}
+button:hover{opacity:0.95}
+label{display:block;margin:8px 0}
+input[type=text],input[type=email],input[type=password],textarea,select{width:100%;padding:8px;border:1px solid #cbd5e1;border-radius:4px}

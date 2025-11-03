@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Book Service{% endblock %}
+{% block content %}
+  <h2>Book a Service</h2>
+  <form method="post">
+    <label>Service Type<br>
+      <select name="service_type">
+        <option>Doctor Appointment</option>
+        <option>Medical Transport</option>
+        <option>Health Check-up</option>
+      </select>
+    </label><br>
+    <label>Details<br><textarea name="details" rows="4"></textarea></label><br>
+    <button type="submit">Request Service</button>
+  </form>
+{% endblock %}

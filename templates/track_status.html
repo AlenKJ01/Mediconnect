@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Track Status{% endblock %}
+{% block content %}
+  <h2>Track Requests</h2>
+  {% if requests %}
+    <table class="table">
+      <thead><tr><th>ID</th><th>Type</th><th>Status</th><th>Updated</th></tr></thead>
+      <tbody>
+        {% for r in requests %}
+          <tr>
+            <td>{{ r.id }}</td>
+            <td>{{ r.service_type }}</td>
+            <td>{{ r.status }}</td>
+            <td>{{ r.updated_at.strftime('%Y-%m-%d %H:%M') if r.updated_at else r.created_at.strftime('%Y-%m-%d %H:%M') }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>No requests found.</p>
+  {% endif %}
+  <p>Note: Status changes appear after page reload (no live updates — no JavaScript used).</p>
+{% endblock %}

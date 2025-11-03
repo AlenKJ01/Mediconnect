@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}Admin Dashboard{% endblock %}
+{% block content %}
+  <h2>Admin — Service Requests</h2>
+  {% if requests %}
+    <table class="table">
+      <thead><tr><th>ID</th><th>User</th><th>Type</th><th>Details</th><th>Status</th><th>Created</th><th>Actions</th></tr></thead>
+      <tbody>
+        {% for r in requests %}
+          <tr>
+            <td>{{ r.id }}</td>
+            <td>{{ r.user.name or (r.user.email or r.user.phone) }}</td>
+            <td>{{ r.service_type }}</td>
+            <td>{{ r.details }}</td>
+            <td>{{ r.status }}</td>
+            <td>{{ r.created_at.strftime('%Y-%m-%d %H:%M') }}</td>
+            <td>
+              <form method="post" action="{{ url_for('admin_update') }}" style="display:inline">
+                <input type="hidden" name="request_id" value="{{ r.id }}">
+                <input type="hidden" name="action" value="accept">
+                <button type="submit">Accept</button>
+              </form>
+              <form method="post" action="{{ url_for('admin_update') }}" style="display:inline">
+                <input type="hidden" name="request_id" value="{{ r.id }}">
+                <input type="hidden" name="action" value="complete">
+                <button type="submit">Complete</button>
+              </form>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>No requests.</p>
+  {% endif %}
+{% endblock %}
