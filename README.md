@@ -43,7 +43,8 @@ Users can **register, log in, book services, and track their request status**, w
 
 ## 🧩 Folder Structure
 
-```mediconnect/
+```bash
+mediconnect/
 
 │
 ├── app.py (Main Flask app entry point)
