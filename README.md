@@ -46,29 +46,29 @@ Users can **register, log in, book services, and track their request status**, w
 mediconnect/
 
 │
-├── app.py # Main Flask app entry point
+├── app.py (Main Flask app entry point)
 
-├── database.py # Database models & init logic
+├── database.py (Database models & init logic)
 
 ├── static/
 
-│ ├── style.css # App styling
+│ ├── style.css (App styling)
 
-│ └── bg.jpg # Background image (add your own)
+│ └── backgroundg.jpg (Background image)
 
 ├── templates/
 
-│ ├── base.html # Common layout for all pages
+│ ├── base.html (Common layout for all pages)
 
-│ ├── dashboard.html # User dashboard
+│ ├── dashboard.html (User dashboard)
 
-│ ├── book_service.html # Booking form page
+│ ├── book_service.html (Booking form page)
 
-│ ├── track_status.html # Track service status
+│ ├── track_status.html (Track service status)
 
-│ ├── admin_login.html # Admin login page
+│ ├── admin_login.html (Admin login page)
 
-│ └── admin_dashboard.html # Admin control panel
+│ └── admin_dashboard.html (Admin control panel)
 
 └── README.md
 
@@ -118,12 +118,15 @@ init_admin()`
 Default admin credentials:
 
 Email: alen@gmail.com
+
 Password: alen001
 
 ### 6️⃣ Run the application
     
 `flask run`
+
 OR
+
 `python app.py`
 
 
