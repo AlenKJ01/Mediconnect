@@ -9,7 +9,7 @@ Users can **register, log in, book services, and track their request status**, w
 
 ### 👤 User Panel
 - **Register / Login** using email & password.
-- **Book a medical service** (doctor visit, medical transport, check-up, etc.).
+- **Book a medical service** (doctor visit, medical transport, check-up).
 - **Track service request status** in real-time.
 - **View all bookings** in a clean dashboard.
 
@@ -33,9 +33,9 @@ Users can **register, log in, book services, and track their request status**, w
 | Category | Technologies Used |
 |-----------|-------------------|
 | **Frontend** | HTML5, CSS3, Jinja2 Templates |
-| **Backend** | Python 3, Flask |
-| **Database** | SQLite (via SQLAlchemy ORM) |
-| **Styling** | Custom CSS with blurred overlay background |
+| **Backend** | Python, Flask |
+| **Database** | SQLite (SQLAlchemy) |
+| **Styling** | Custom CSS |
 | **Authentication** | Flask session management |
 | **Tools** | Virtual Environment, Flask Shell for DB setup |
 
@@ -44,19 +44,32 @@ Users can **register, log in, book services, and track their request status**, w
 ## 🧩 Folder Structure
 
 mediconnect/
+
 │
 ├── app.py # Main Flask app entry point
+
 ├── database.py # Database models & init logic
+
 ├── static/
+
 │ ├── style.css # App styling
+
 │ └── bg.jpg # Background image (add your own)
+
 ├── templates/
+
 │ ├── base.html # Common layout for all pages
+
 │ ├── dashboard.html # User dashboard
+
 │ ├── book_service.html # Booking form page
+
 │ ├── track_status.html # Track service status
+
 │ ├── admin_login.html # Admin login page
+
 │ └── admin_dashboard.html # Admin control panel
+
 └── README.md
 
 
@@ -93,23 +106,25 @@ mediconnect/
 
             flask shell
 
-        Then execute:
+            Then execute:
 
             from app import db, init_admin
             db.drop_all()
             db.create_all()
-            init_admin(app)
+            init_admin()
 
     (This creates tables and a default admin account.)
 
     Default admin credentials:
 
-        Email: admin@mediconnect.com
-        Password: admin123
+        Email: alen@gmail.com
+        Password: alen001
 
 ### 6️⃣ Run the application
     
-        flask run
+       ** flask run **
+           OR
+       ** python app.py **
 
 
 **Access at → http://127.0.0.1:5000**
