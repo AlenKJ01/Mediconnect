@@ -1,7 +1,7 @@
 # 🏥 MediConnect – Medical Services Prototype
 
 A full-stack **Flask web application** that connects patients with medical service providers.  
-Users can **register, log in, book services, and track their request status**, while admins can **view, accept, and complete service requests** — all through a clean, responsive interface.
+Users can **register, log in, book services, and track their request status**, while admins can **view, accept, and complete service requests,**  all through a clean, responsive interface.
 
 ---
 
