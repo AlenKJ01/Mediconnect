@@ -43,7 +43,7 @@ Users can **register, log in, book services, and track their request status**, w
 
 ## 🧩 Folder Structure
 
-mediconnect/
+```mediconnect/
 
 │
 ├── app.py (Main Flask app entry point)
@@ -71,7 +71,7 @@ mediconnect/
 │ └── admin_dashboard.html (Admin control panel)
 
 └── README.md
-
+```
 
 ---
 
@@ -79,39 +79,39 @@ mediconnect/
 
 ### 1️⃣ Clone this repository
 
-`git clone https://github.com/AlenKJ01/Mediconnect.git`
-`cd mediconnect`
+```git clone https://github.com/AlenKJ01/Mediconnect.git`
+cd mediconnect```
 
 ### 2️⃣ Create a virtual environment
 
-`python -m venv venv`
+```python -m venv venv```
 
 ### 3️⃣ Activate it
 
 Windows:
 
-`venv\Scripts\activate`
+```venv\Scripts\activate```
 
 macOS/Linux:
 
-`source venv/bin/activate`
+```source venv/bin/activate```
 
 ### 4️⃣ Install dependencies
 
-`pip install -r requirements.txt`
+```pip install -r requirements.txt```
 
 ### 5️⃣ Initialize the database
 
 Run the Flask shell:
 
-`flask shell`
+```flask shell```
 
 Then execute:
 
-`from app import db, init_admin
+```from app import db, init_admin`
 db.drop_all()
 db.create_all()
-init_admin()`
+init_admin()```
 
 (This creates tables and a default admin account.)
 
@@ -123,11 +123,11 @@ Password: alen001
 
 ### 6️⃣ Run the application
     
-`flask run`
+```flask run```
 
 OR
 
-`python app.py`
+```python app.py```
 
 
 **Access at → http://127.0.0.1:5000**
