@@ -79,52 +79,52 @@ mediconnect/
 
 ### 1️⃣ Clone this repository
 
-        git clone https://github.com/yourusername/medical-services-app.git
-        cd mediconnect
+`git clone https://github.com/AlenKJ01/Mediconnect.git`
+`cd mediconnect`
 
 ### 2️⃣ Create a virtual environment
 
-        python -m venv venv
+`python -m venv venv`
 
 ### 3️⃣ Activate it
 
-        Windows:
+Windows:
 
-        venv\Scripts\activate
+`venv\Scripts\activate`
 
-        macOS/Linux:
+macOS/Linux:
 
-        source venv/bin/activate
+`source venv/bin/activate`
 
 ### 4️⃣ Install dependencies
 
-        pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ### 5️⃣ Initialize the database
 
-        Run the Flask shell:
+Run the Flask shell:
 
-            flask shell
+`flask shell`
 
-            Then execute:
+Then execute:
 
-            from app import db, init_admin
-            db.drop_all()
-            db.create_all()
-            init_admin()
+`from app import db, init_admin
+db.drop_all()
+db.create_all()
+init_admin()`
 
-    (This creates tables and a default admin account.)
+(This creates tables and a default admin account.)
 
-    Default admin credentials:
+Default admin credentials:
 
-        Email: alen@gmail.com
-        Password: alen001
+Email: alen@gmail.com
+Password: alen001
 
 ### 6️⃣ Run the application
     
-       ** flask run **
-           OR
-       ** python app.py **
+`flask run`
+OR
+`python app.py`
 
 
 **Access at → http://127.0.0.1:5000**
